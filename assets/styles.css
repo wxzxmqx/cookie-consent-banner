@@ -1,0 +1,96 @@
+* {
+    font-family: 'Space Grotesk';
+}
+
+body {
+    background-color: #eeeeee;
+}
+
+.container {
+    text-align: center;
+}
+
+.container-end a {
+    color: rgb(40, 124, 219);
+}
+
+.connect-with-me {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.connect-with-me svg {
+    width: 32px;
+    height: 32px;
+}
+
+.close-window {
+    float: right;
+    cursor: pointer;
+}
+
+.cookie-container {
+    position: fixed;
+    max-width: 400px;
+    bottom: 0;
+    right: 0;
+    padding: 1.5rem;
+}
+
+.cookie-content {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 4px -1px 23px 3px rgba(52, 52, 52, 0.137);
+}
+
+.cookie-text a {
+    color: rgb(40, 124, 219);
+}
+
+.container button, .btn-accept {
+    background-color: rgb(40, 124, 219);
+    border: none;
+    color: white;
+    padding: .5rem 1rem;
+    cursor: pointer;
+    transition: background-color .4s;
+}
+
+.btn-decline {
+    padding: .5rem 1rem;
+    border: none;
+    color: black;
+    background-color: rgb(204, 204, 204);
+    cursor: pointer;
+    transition: background-color .4s;
+}
+
+.btn-accept:hover, .container button:hover {
+    background-color: rgb(34, 105, 185);
+}
+
+.btn-decline:hover {
+    background-color: rgb(187, 187, 187);
+}
+
+.notification-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    width: 300px;
+}
+
+.notification-content {
+    background-color: white;
+    padding: .5rem 2rem;
+    border-radius: 1rem;
+    box-shadow: 4px -1px 23px 3px rgba(52, 52, 52, 0.137);
+}
+
+.hidden {
+    display: none;
+}
