@@ -9,13 +9,14 @@ const resetStorageBtn = document.querySelector('.reset-storage');
 function checkStorageData() {
     const savedChoice = localStorage.getItem('cookieConsent');
 
-    return savedChoice ? modalWindow.classList.add('hidden') : modalWindow.classList.remove('hidden');
+    savedChoice ? modalWindow.classList.add('hidden') : modalWindow.classList.remove('hidden');
 }
 
 resetStorageBtn.addEventListener('click', () => {
     localStorage.removeItem('cookieConsent');
+    modalWindow.classList.remove('hidden');
 
-    return modalWindow.classList.remove('hidden');
+    showNotification('Settings Reset', 'Your cookie preferences have been cleared.');
 });
 
 acceptCookiesBtn.addEventListener('click', () => {
