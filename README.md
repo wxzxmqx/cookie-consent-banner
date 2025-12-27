@@ -27,4 +27,4 @@ cookie-consent-banner/
 └── index.html           # The structure of website
 ```
 
-The project was made for [https://roadmap.sh/projects/cookie-consent](roadmap.sh).
+The project was made for [roadmap.sh](https://roadmap.sh/projects/cookie-consent).
